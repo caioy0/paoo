@@ -89,6 +89,52 @@
 // const peloMenosUmComecaComA = nomes.some(n=>n.startsWith('A'))
 // console.log(peloMenosUmComecaComA)
 
-const valores = [1, 2, 3, 4]
-const soma = valores.reduce((ac, v) => ac + v)
-console.log(soma)
+// const valores = [1, 2, 3, 4]
+// const soma = valores.reduce((ac, v) => ac + v)
+// console.log(soma)
+
+
+// Closures
+// let umaFuncao = function(){
+//     console.log('Fui armazenada em uma variavel')
+// }
+// //umaFuncao()
+// function f(funcao){
+//     funcao()
+// }
+// //f(umaFuncao())
+// function g(){
+//     function outraFuncao(){
+//         console.log('Fui criada por g')
+//         return undefined
+//     }
+//     return outraFuncao()
+// }
+
+// f(g())
+//f(g)
+//g()()
+//const gResult = g ()
+//gResult()
+
+// f(function(){
+//     console.log("Sou uma function passada para f")
+// })
+// f(()=> console.log("Sou uma arrow passada para f"))
+
+// function ola(){
+//     let nome = 'Joao'
+//     return function(){
+//         console.log(`Ola, ${nome}`)
+//     }
+//     // function g(){
+//     //     console.log(nome)
+//     // }
+//     // g()
+// }
+// let olaResult = ola()
+// olaResult()
+
+function saudacoesFactory(saudacao, nome){
+
+}
