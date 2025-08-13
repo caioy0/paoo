@@ -1,0 +1,2 @@
+compilar = node ./
+compilar em tempo real = node --watch ./
