@@ -135,6 +135,24 @@
 // let olaResult = ola()
 // olaResult()
 
-function saudacoesFactory(saudacao, nome){
+// function saudacoesFactory(saudacao, nome){
+//     let a 
+//     return function (){
+//         console.log(`${saudacao}, ${nome}`)
+//     }
+// }
 
-}
+// let olaJoao = saudacoesFactory('Ola')
+
+// let pessoa = {
+//     nome: 'Maria',
+//     idade: 21,
+//     endereco:{
+//         logradouro: 'Rua B',
+//         numero: 121
+//     }
+// }
+
+// conosle.log(pessoa.endereco.logradouro)
+//console.log(pessoa['endereco']['numero'])
+//console.log(pessoa['endereco'].logradouro)
