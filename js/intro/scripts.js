@@ -135,6 +135,7 @@
 // let olaResult = ola()
 // olaResult()
 
+<<<<<<< HEAD:js/intro/scripts.js
 // function saudacoesFactory(saudacao, nome){
 //     let a 
 //     return function (){
@@ -156,3 +157,118 @@
 // conosle.log(pessoa.endereco.logradouro)
 //console.log(pessoa['endereco']['numero'])
 //console.log(pessoa['endereco'].logradouro)
+=======
+function saudacoesFactory(saudacao, nome){
+}
+
+// AULA 3
+
+// Uma concessionaria com CNPJ e endereco, com logradouro, numero e bairro (pensar na estrutura que um bairro pode ter). Ela tem um estoque de veiculos. Cada um tem marca, modelo e ano de fabricacao. Precisa pensar que o numero de veiculos que a concessionaria tem pode variar ao longo do tempo, ele pode estar vazio, pode ter 15 veiculos, pode ter 502 e assim por diante.
+
+// const concessionaria ={
+// 	CNPJ: ,
+// 	endereco: {
+// 		logradouro: ,
+// 		numero: ,
+// 		bairro:{
+// 			nome: ,
+// 			regiao: 
+// 		}
+// 	}
+// 	veiculos:{
+// 		'ford': {
+// 			modelo: 'Ka"',
+// 			anoDeFabricacao: 2015
+// 		},{
+// 			modelo: 'Ecosport'
+// 			anoDeFabricacao: 2018
+// 		},
+// 		'chevrolet': {
+// 			modelo: 'camaro',
+// 			anoDeFabricacao: 2020
+// 		}
+
+// 		marca: ,
+// 		modelo: ,
+// 		ano: ,
+// 		quantidade: 
+// 	}
+// }
+
+// for (let marca of Object.keys(concessionaria.veiculos)){
+// 	console.log(marca)
+// }
+// console.log(consessionaria.endereco.bairro.regiao)
+// console.log(concessionaria['endereco']['Bairro']['nome'])
+
+// let calculadora = {
+// 	soma: (a,b) => a+b,
+// 	subtracao: function(a,b){
+// 		return a-b
+// 	}
+// }
+
+// let x = 2
+// let y = 3
+
+// for (let opercao of Object.values(calculadora)){
+// 	// Antes de mostrar o resulatado, mostrar o nome da funcao, interpolando em um unico console.log
+// 	console.log(operacao(x,y))
+// }
+
+// processamento sincrono e assincrono
+
+// const a = 2+7
+// const b = 5
+// console.log(a+b)
+
+// function demorada(){
+// 	const atualMais2Segundo = new Date().getTime() * 2000
+// 	while(new Date().getTime() <= atualMais2Segundo);
+// 	const d = 8 + 4
+// 	return d
+// }
+
+// const a = 2 + 6
+// const b = 5+9
+// const d = demorada()
+// setTimeout( () => {
+// 	const d = demorada ()
+// 	console.log(`d: ${d}`)
+// }, 0)
+// setTimeout(() => {
+// 	const tempo = 1000
+// 	const d = demorada(tempo)
+// 	console.log(`d(${tempo})' ${d}`)
+// },0)
+// const e = 2 + a + b
+// console.log(`e: ${e}`)
+
+// Inferno de callbacks
+// aka callback hell
+
+const fs = require('fs')
+const abritArquivo = function(nomeArquivo){
+	const exbirConteudo = function(erro, conteudo){
+		if(erro){
+			console.log(`Deu erro: ${erro}`)
+		}else{
+			console.log(`Conteudo: ${conteudo}`)
+			const dobro = Number(conteudo.toString()) * 2
+			const finalizar = function(erro){
+				if(erro){
+					console.log(`Deu erro escrevendo o dobro: ${erro}`)
+				}else{
+					console.log('A escrita do dobro deu certo')
+				}
+			}
+			fs.writeFile('dobro.txt', dobro.toString())
+			console.log('Fim da exibirConteudo')
+		}
+	}
+	fs.readFile(nomeArquivo, exbirConteudo)
+	console.log('Fim da abrirArquivo')
+}
+// chamar a funcao daqui a pouco
+abrirArquivo("arquivo.txt")
+>>>>>>> 9cc43bd61db17668e5f4174b00cb27f1642db11d:js/scripts.js
