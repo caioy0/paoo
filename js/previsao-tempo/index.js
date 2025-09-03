@@ -1,3 +1,4 @@
+require('dotenv').config();
 const axios = require('axios')
 
 const PROTOCOL = 'https'
@@ -6,9 +7,9 @@ const UNITS = 'metric'
 const Q = 'Itu'
 const LANG = 'pt_br'
 const CNT = 1
-const APPID = 
+const APPID = process.env.APPID;
 
-const URL = `${PROTOCOL}://${BASE_URL}?appid=${APPID}&units=${UNITS}&q=${Q}&cnt=${CNT}&${LANG}`
+const URL = `${PROTOCOL}://${BASE_URL}?appid=${APPID}&units=${UNITS}&q=${Q}&cnt=${CNT}&lang=${LANG}`
 
 const promiseResult = axios.get(URL)
 
