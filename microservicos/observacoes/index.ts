@@ -1,18 +1,9 @@
+// microservicos/observacoes/index.ts
 import express, { Request, Response } from 'express'
 import axios from 'axios'
 import { v4 as uuidv4 } from 'uuid'
-
-// Tipos
-interface Observacao {
-  id: string
-  texto: string
-  lembreteId: string
-}
-
-interface Evento {
-  type: string
-  payload: any
-}
+import { Observacao } from '../types/types'
+import { Evento } from '../types/types'
 
 // Estrutura em memória
 const observacoesPorLembrete: Record<string, Observacao[]> = {}

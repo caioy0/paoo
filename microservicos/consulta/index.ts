@@ -1,15 +1,6 @@
 import express, { Request, Response } from "express";
-
-interface Lembrete {
-  id: string;
-  texto: string;
-}
-
-interface Observacao {
-  id: string;
-  texto: string;
-  lembreteId: string;
-}
+import { Observacao } from '../types/types'
+import { Lembrete } from '../types/types'
 
 const app = express();
 app.use(express.json());
@@ -45,10 +36,7 @@ app.post("/eventos", (req: Request, res: Response) => {
       
         res.status(200).send({ msg: "Evento processado" });
         
-    } catch (error) {
-        console.log(`Error: ${error}`)
-        res.json(error)
-    }
+    } catch (e) {} // descarte de evento nao precisa de console log para
 });
 
 // Inicializa o servidor

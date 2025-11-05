@@ -1,15 +1,6 @@
 import express, { Request, Response } from "express";
-
-interface Lembrete {
-  id: string;
-  texto: string;
-}
-
-interface Observacao {
-  id: string;
-  texto: string;
-  lembreteId: string;
-}
+import { Observacao } from '../types/types'
+import { Lembrete } from '../types/types'
 
 const app = express();
 app.use(express.json());
