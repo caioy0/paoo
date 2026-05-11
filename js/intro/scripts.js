@@ -135,7 +135,6 @@
 // let olaResult = ola()
 // olaResult()
 
-<<<<<<< HEAD:js/intro/scripts.js
 // function saudacoesFactory(saudacao, nome){
 //     let a 
 //     return function (){
@@ -157,9 +156,6 @@
 // conosle.log(pessoa.endereco.logradouro)
 //console.log(pessoa['endereco']['numero'])
 //console.log(pessoa['endereco'].logradouro)
-=======
-function saudacoesFactory(saudacao, nome){
-}
 
 // AULA 3
 
@@ -248,7 +244,7 @@ function saudacoesFactory(saudacao, nome){
 // aka callback hell
 
 const fs = require('fs')
-const abritArquivo = function(nomeArquivo){
+const abrirArquivo = function(nomeArquivo){
 	const exbirConteudo = function(erro, conteudo){
 		if(erro){
 			console.log(`Deu erro: ${erro}`)
@@ -271,4 +267,3 @@ const abritArquivo = function(nomeArquivo){
 }
 // chamar a funcao daqui a pouco
 abrirArquivo("arquivo.txt")
->>>>>>> 9cc43bd61db17668e5f4174b00cb27f1642db11d:js/scripts.js

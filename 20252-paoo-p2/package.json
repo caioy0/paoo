@@ -1,0 +1,28 @@
+{
+  "name": "20252_fatec_ipi_paoo",
+  "version": "1.0.0",
+  "description": "Nome: Caio Yugo Saeda Uemura - 2040482312014",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caioy0/20252_fatec_ipi_paoo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/caioy0/20252_fatec_ipi_paoo/issues"
+  },
+  "homepage": "https://github.com/caioy0/20252_fatec_ipi_paoo#readme",
+  "dependencies": {
+    "@google/gemini-cli": "^0.18.0",
+    "axios": "^1.13.2",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "uuid": "^13.0.0"
+  }
+}

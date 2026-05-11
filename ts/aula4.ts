@@ -1,7 +1,7 @@
 // 1 + 2 ... + (n-1) +n
 
 console.log('start...')
-function calculoRapido(n){
+function calculoRapido(n : number){
     return n >= 0 ? Promise.resolve((n/2) * (n + 1)) : Promise.reject('only positives')
 }
 let myPromise = calculoRapido(10)
@@ -18,7 +18,7 @@ myPromise2.then(res=>console.log('resultado: ', res))
 
 console.log('end...')
 
-function f (a){
+function f (a : number){
     console.log(a)
 }
 const a = 2

@@ -1,0 +1,19 @@
+{
+  "name": "classificacao",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch index.js"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google/genai": "^1.30.0",
+    "axios": "^1.13.1",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0"
+  }
+}
